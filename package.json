@@ -5,9 +5,8 @@
   "description": "Interactive Map for Table Top RPGs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel",
-    "prebuild": "rm -f dist/*",
-    "build": "parcel build"
+    "start": "parcel",    
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
