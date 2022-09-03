@@ -5,7 +5,8 @@
   "description": "Interactive Map for Table Top RPGs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel",    
+    "start": "parcel src/*",
+    "prebuild": "rm -f dist/*.(css|css.map|js|js.map|png|html)",
     "build": "parcel build src/index.html"
   },
   "repository": {
@@ -23,6 +24,9 @@
     "vue": "^3.2.38"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "leaflet-mouse-position": "^1.2.0",
+    "parcel": "latest",
+    "parcel-resolver-ignore": "^2.1.3",
+    "sharp": "^0.29.1"
   }
 }
